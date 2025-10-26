@@ -1,0 +1,60 @@
+# Environments
+.env
+env/
+*.env
+.venv
+venv/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+*.so
+.Python
+
+# Data, Models & Outputs
+/data/*
+*.pkl
+*.joblib
+reports/
+*.html
+*.pdf
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE & Editor configuration
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Secrets & Credentials
+*.key
+*.pem
+id_rsa
+known_hosts
+.aws/
+.gcloud/
+secrets.yaml
+*.credential
+credentials.json
+
+# Docker
+docker-compose.override.yml

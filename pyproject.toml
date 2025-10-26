@@ -1,0 +1,20 @@
+[project]
+
+name = "vietnam-coffee-analysis"
+version = "0.1.0"
+description = "Data science project analyzing Vietnam coffee shop market"
+authors = [{name = "Nguyen Duc Gia Bao"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+# Dependencies
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "jupyter",
+    "requests",
+]
