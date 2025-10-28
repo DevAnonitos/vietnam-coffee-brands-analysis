@@ -18,3 +18,28 @@ dependencies = [
     "jupyter",
     "requests",
 ]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+skip-string-normalization = false
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+  | notebooks
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
+ignore = ["E203", "E501"]
+exclude = ["venv", "build", "dist"]

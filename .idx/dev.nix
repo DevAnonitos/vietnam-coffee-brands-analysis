@@ -33,10 +33,10 @@
       "ms-toolsai.jupyter-renderers"
       "ms-toolsai.vscode-jupyter-cell-tags"
       "ms-toolsai.vscode-jupyter-slideshow"
-      "saoudrizwan.claude-dev"
       "bungcip.better-toml"
       "redhat.vscode-yaml"
       "remcohaszing.schemastore"
+      "EricSia.pythonsnippets3"
     ];
 
     # Enable previews
