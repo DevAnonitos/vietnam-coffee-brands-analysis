@@ -1,0 +1,17 @@
+project:
+  name: vietnam-coffee-brands-analysis
+  root: .
+  version: 0.1.0
+
+data:
+  raw: data/raw
+  interim: data/interim
+  external: data/external
+  features: data/features
+  processed: data/processed
+
+reports:
+
+experiments:
+
+

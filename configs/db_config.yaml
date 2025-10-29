@@ -1,0 +1,9 @@
+paths:
+  kaggle: configs/db/kaggle.yaml
+  huggingface: configs/db/huggingface.yaml
+  postgres: configs/db/postgres.yaml
+
+metadata:
+  project: "Vietnam Coffee Brands Analysis"
+  author: "DevAnonitos"
+  last_updated: "2025-10-25"

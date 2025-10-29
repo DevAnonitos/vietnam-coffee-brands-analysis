@@ -37,6 +37,12 @@
       "redhat.vscode-yaml"
       "remcohaszing.schemastore"
       "EricSia.pythonsnippets3"
+      "mechatroner.rainbow-csv"
+      "ms-azuretools.vscode-containers"
+      "ms-azuretools.vscode-docker"
+      "ms-python.isort"
+      "ms-python.pylint"
+      "njpwerner.autodocstring"
     ];
 
     # Enable previews
