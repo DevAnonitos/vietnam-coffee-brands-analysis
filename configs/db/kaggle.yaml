@@ -1,0 +1,15 @@
+source:
+  name: kaggle
+  type: api
+  description: ""
+
+credentials:
+  username_env: KAGGLE_USERNAME
+  key_env: KAGGLE_PRIVATEKEY
+
+dataset:
+  name:
+  unzip: true
+
+options:
+  auto_download: true

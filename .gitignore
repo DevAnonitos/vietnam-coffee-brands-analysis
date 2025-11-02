@@ -29,7 +29,6 @@ reports/
 .ipynb_checkpoints/
 
 # IDE & Editor configuration
-.vscode/*
 !.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/launch.json

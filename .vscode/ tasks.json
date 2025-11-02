@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "options": {
+    "env": {
+      "PYTHONPATH": "${workspaceFolder}/src",
+      "JUPYTER_CONFIG_DIR": "${workspaceFolder}/.jupyter"
+    }
+  },
+  "tasks": [
+    {
+      "label": "Format Code",
+      "type": "shell",
+      "command": "black . && isort . && ruff check . --fix",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Launch Jupyter Notebook",
+      "type": "shell",
+      "command": "jupyter notebook",
+      "isBackground": true,
+      "presentation": {
+        "focus": true,
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Export Environment",
+      "type": "shell",
+      "command": "pip freeze > requirements.txt",
+      "problemMatcher": []
+    }
+  ]
+}
