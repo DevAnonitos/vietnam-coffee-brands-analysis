@@ -1,0 +1,9 @@
+version: ""
+
+services:
+  app:
+    build: .
+    container_name: app
+    volumes:
+      - .:/app
+    restart: unless-stopped

@@ -1,11 +1,66 @@
 {
-    "editor.formatOnSave": true,
-    "[python]": {
-      "editor.defaultFormatter": "ms-python.black-formatter"
-    },
-    "python.formatting.provider": "none",
-    "isort.args": ["--profile", "black"],
-    "ruff.enable": true,
-    "ruff.lintOnSave": true
+  // editor configs
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "isort.check": true,
+  "isort.args": ["--profile", "black"],
+  // python configs
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.poetryPath": "poetry",
+  "python.experiments.enabled": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.terminal.activateEnvironment": true,
+  "python.activeStateToolPath": "state",
+  "python.testing.pytestArgs": ["tests"],
+  "python.experiments.optOutFrom": ["All"],
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  // jupiter & notebook configs
+  "jupyter.widgetScriptSources": [
+
+  ],
+  "jupyter.logging.level": "debug",
+  "jupyter.askForKernelRestart": false,
+  "jupyter.themeMatplotlibPlots": true,
+  "jupyter.interactiveWindow.viewColumn": "active",
+  "jupyter.interactiveWindow.creationMode": "multiple",
+  "jupyter.exportWithOutputEnabled": true,
+  "jupyter.variableExplorerExclude": "module;function;builtin_function_or_method;ABCMeta;type;ModelMetaclass",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "notebook.lineNumbers": "on",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.stickyScroll.enabled": true,
+  "notebook.consolidatedRunButton": true,
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.output.fontFamily": "JetBrains Mono, Consolas, monospace",
+  // terminal configs
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  // explorer configs
+  "explorer.autoReveal": true,
+  "search.followSymlinks": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.colorTheme": "Default Dark Modern",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
-  

@@ -43,6 +43,8 @@
       "ms-python.isort"
       "ms-python.pylint"
       "njpwerner.autodocstring"
+      "ms-toolsai.vscode-jupyter-powertoys"
+      "janisdd.vscode-edit-csv"
     ];
 
     # Enable previews
@@ -74,7 +76,7 @@
           fi
 
           source .venv/bin/activate
-          
+
           # If requirements.txt exists, install dependencies
           if [ -f "requirements.txt" ]; then
             echo "📦 Installing dependencies from requirements.txt..."

@@ -1,6 +1,6 @@
 [project]
 
-name = "vietnam-coffee-analysis"
+name = "vietnam-coffee-brands-analysis"
 version = "0.1.0"
 description = "Data science project analyzing Vietnam coffee shop market"
 authors = [{name = "Nguyen Duc Gia Bao"}]
