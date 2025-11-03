@@ -3,15 +3,21 @@ repos:
     rev: 25.9.0
     hooks:
       - id: black
-
+        language_version: python3
 
   - repo: https://github.com/pycqa/isort
     rev: 7.0.0
     hooks:
       - id: isort
+        args: ["--profile", "black"]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.14.2
     hooks:
       - id: ruff
       - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      -   id: trailing-whitespace
