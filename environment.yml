@@ -1,0 +1,49 @@
+name: vietnam-coffee-brands-analysis
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+
+  # Core packages
+  - pip
+  - ipykernel
+  - jupyter
+  - jupyterlab
+  - notebook
+
+  # Data processing
+  - numpy
+  - pandas
+  - scipy
+  - pyarrow
+
+  # -Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - altair
+
+  # Data handling & APIs
+  - requests
+  - openpyxl
+  - beautifulsoup4
+  - lxml
+
+  # Dev tools
+  - black
+  - isort
+  - ruff
+  - pre-commit
+  - mypy
+
+  # Install package manager
+  - pip:
+      - kaggle
+      - datasets
+      - nbformat
+      - nbconvert
+      - plotly-express
+      - huggingface_hub
+      - jupyterlab_code_formatter

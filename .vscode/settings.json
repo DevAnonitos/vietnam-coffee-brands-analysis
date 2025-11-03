@@ -22,8 +22,12 @@
   "files.insertFinalNewline": true,
   "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
+  // formating & linting configs
   "isort.check": true,
   "isort.args": ["--profile", "black"],
+  "ruff.enable": true,
+  "ruff.lineLength": 88,
+  "ruff.lint.select": ["C", "E", "F", "W"],
   // python configs
   "[python]": {
     "editor.tabSize": 2,
