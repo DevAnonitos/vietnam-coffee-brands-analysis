@@ -127,6 +127,24 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "janisdd.vscode-edit-csv"
   },
+  // datawrangler configs
+  "dataWrangler.enabledFileTypes": {
+    "csv": true,
+    "tsv": true,
+    "parquet": true,
+    "xlsx": true,
+    "xls": true,
+    "jsonl": false
+  },
+  "dataWrangler.grid.defaultColumnWidth": 200,
+  "dataWrangler.outputRenderer.enabled": true,
+  "dataWrangler.panels.displayOnTabFocus": true,
+  "dataWrangler.experiments.fastCsvParsing": true,
+  "dataWrangler.experiments.copilot.enabled": true,
+  "dataWrangler.columnInsights.displayOnOpen": true,
+  "dataWrangler.defaultViewingFilterOptions": "advanced",
+  "dataWrangler.startInEditModeForNotebookEntrypoints": true,
+  "dataWrangler.outputRenderer.columnInsights.displayByDefault": false,
   // markdown configs
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
@@ -157,7 +175,7 @@
     "*.ipynb": "jupyter-notebook",
     "*.md": "vscode.markdown.preview.editor",
   },
-  "workbench.tree.indent": 20,
+  "workbench.tree.indent": 12,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.editor.tabSizing": "shrink",
@@ -180,18 +198,28 @@
   "search.collapseResults": "alwaysCollapse",
   "search.searchEditor.focusResultsOnSearch": true,
   "search.searchEditor.doubleClickBehaviour": "goToLocation",
-  // github confis
-  "git.autofetch": "all",
-  "git.countBadge": "all",
-  "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync",
-  "git.autoRepositoryDetection": "openEditors",
-  // AI configs
-  "chat.commandCenter.enabled": true,
   // outline configs
   "outline.showClasses": true,
   "outline.showVariables": true,
   "outline.showFunctions": true,
   "problems.showCurrentInStatus": true,
   "outline.collapseItems": "alwaysExpand",
+  // github confis
+  "git.autofetch": "all",
+  "git.countBadge": "all",
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "git.diagnosticsCommitHook.enabled": false,
+  "git.autoRepositoryDetection": "openEditors",
+  // chat & AI configs
+  "chat.agent.enabled": true,
+  "chat.editRequests": "inline",
+  "chat.commandCenter.enabled": true,
+  "chat.agent.thinkingStyle": "collapsed",
+  "github.copilot.chat.agent.autoFix": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.imageUpload.enabled": true,
+  "github.copilot.chat.copilotDebugCommand.enabled": true,
+  "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
 }
