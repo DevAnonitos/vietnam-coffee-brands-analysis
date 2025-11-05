@@ -1,3 +1,21 @@
 {
-    
+  "recommendations": [
+    // ms-python extensions
+    "ms-python.python",
+    "ms-python.isort",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    // ms-toolai extensions
+    "ms-toolsai.jupyter",
+    "ms-toolsai.vscode-ai",
+    "ms-toolsai.datawrangler",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+  ],
+  "unwantedRecommendations": [
+    "ms-python.flake8",
+    "ms-python.autopep8",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
 }

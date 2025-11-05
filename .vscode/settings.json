@@ -189,7 +189,6 @@
   // AI configs
   "chat.commandCenter.enabled": true,
   // outline configs
-  "breadcrumbs.enabled": true,
   "outline.showClasses": true,
   "outline.showVariables": true,
   "outline.showFunctions": true,
