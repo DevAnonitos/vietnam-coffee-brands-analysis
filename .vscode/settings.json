@@ -5,22 +5,60 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.minimap.scale": 1,
   "editor.insertSpaces": true,
   "editor.formatOnType": false,
+  "editor.linkedEditing": true,
   "editor.formatOnPaste": true,
+  "editor.fontLigatures": true,
+  "editor.stickyTabStops": true,
+  "editor.colorDecorators": true,
   "editor.suggest.preview": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.detectIndentation": false,
+  "editor.selectionHighlight": true,
+  "editor.guides.indentation": true,
   "editor.suggest.showSnippets": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.guides.bracketPairs": "active",
+  "editor.scrollBeyondLastLine": false,
+  "editor.largeFileOptimizations": true,
   "editor.renderWhitespace": "boundary",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.quickSuggestions": { "strings": true },
+  "editor.accessibilitySupport": "auto",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.renderControlCharacters": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace",
+  "editor.unicodeHighlight.allowedCharacters": {
+    "·": true,
+    "→": true
+  },
+  // files configs
+  "files.associations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.yaml": "yaml",
+    "*.yml": "yaml",
+    "*.json": "json"
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/.ipynb_checkpoints": true
+  },
   "files.insertFinalNewline": true,
-  "editor.detectIndentation": false,
   "files.trimTrailingWhitespace": true,
   // formating & linting configs
   "isort.check": true,
@@ -74,6 +112,7 @@
   "notebook.stickyScroll.enabled": true,
   "notebook.consolidatedRunButton": true,
   "notebook.cellToolbarVisibility": "hover",
+  "notebook.consolidatedOutputButton": true,
   "notebook.output.fontFamily": "JetBrains Mono, Consolas, monospace",
   // csv configs
   "csv-edit.pasteMode": "normal",
@@ -88,24 +127,42 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "janisdd.vscode-edit-csv"
   },
+  // markdown configs
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  // debug configs
+  "debug.inlineValues": "auto",
+  "debug.console.wordWrap": true,
+  "debug.openDebug": "neverOpen",
+  "debug.console.closeOnEnd": true,
+  "debug.toolBarLocation": "docked",
+  "debug.allowBreakpointsEverywhere": true,
   // terminal configs
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.scrollback": 20000,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.enablePersistentSessions": true,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
   // explorer & workbench configs
   "explorer.autoReveal": true,
-  "explorer.compactFolders": false,
   "search.followSymlinks": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
-    "*.md": "vscode.markdown.preview.editor"
+    "*.md": "vscode.markdown.preview.editor",
   },
-  "workbench.tree.indent": 12,
+  "workbench.tree.indent": 20,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": true,
+  "workbench.editor.enablePreview": false,
   "workbench.panel.defaultLocation": "bottom",
   "workbench.colorTheme": "Default Dark Modern",
   "breadcrumbs.enabled": true,
@@ -113,7 +170,29 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // search configs
+  "search.mode": "view",
+  "search.showLineNumbers": true,
+  "search.actionsPosition": "auto",
+  "search.defaultViewMode": "tree",
+  "search.decorations.colors": true,
+  "search.quickOpen.includeSymbols": false,
+  "search.collapseResults": "alwaysCollapse",
+  "search.searchEditor.focusResultsOnSearch": true,
+  "search.searchEditor.doubleClickBehaviour": "goToLocation",
   // github confis
   "git.autofetch": "all",
+  "git.countBadge": "all",
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
   "git.autoRepositoryDetection": "openEditors",
+  // AI configs
+  "chat.commandCenter.enabled": true,
+  // outline configs
+  "breadcrumbs.enabled": true,
+  "outline.showClasses": true,
+  "outline.showVariables": true,
+  "outline.showFunctions": true,
+  "problems.showCurrentInStatus": true,
+  "outline.collapseItems": "alwaysExpand",
 }

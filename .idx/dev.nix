@@ -45,6 +45,8 @@
       "njpwerner.autodocstring"
       "ms-toolsai.vscode-jupyter-powertoys"
       "janisdd.vscode-edit-csv"
+      "charliermarsh.ruff"
+      "ms-python.black-formatter"
     ];
 
     # Enable previews
