@@ -1,0 +1,31 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Python files
+*.py text diff=python
+
+# Jupyter Notebook files
+*.ipynb text
+
+# Data files
+*.csv text
+*.tsv text
+*.json text
+*.xlsx binary
+*.xls binary
+
+# Ignore specific file types
+*.log text
+*.tmp text
+
+# Ignore virtual environment directories
+venv/ export-ignore
+env/ export-ignore
+
+# Ignore cache directories
+__pycache__/ export-ignore
+*.pyc export-ignore
+*.pyo export-ignore
+
+# Ignore data directories
+data/ export-ignore

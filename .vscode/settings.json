@@ -58,7 +58,9 @@
     "**/.pytest_cache": true,
     "**/.ipynb_checkpoints": true
   },
+  "files.enableTrash": true,
   "files.insertFinalNewline": true,
+  "files.refactoring.autoSave": true,
   "files.trimTrailingWhitespace": true,
   // formating & linting configs
   "isort.check": true,
@@ -146,6 +148,20 @@
   "dataWrangler.startInEditModeForNotebookEntrypoints": true,
   "dataWrangler.outputRenderer.columnInsights.displayByDefault": false,
   // markdown configs
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "cSpell.fixSpellingWithRenameProvider": true,
+    "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+    "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
+  },
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
   // debug configs
@@ -204,6 +220,27 @@
   "outline.showFunctions": true,
   "problems.showCurrentInStatus": true,
   "outline.collapseItems": "alwaysExpand",
+  // docker configs
+  "[dockerfile]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "docker.lsp.telemetry": "all",
+  "docker.lsp.debugServerPort": null,
+  "docker.languageserver.diagnostics.deprecatedMaintainer": "warning",
+  "docker.extension.editor.dockerfileBuildStageDecorationLines": true,
+  "docker.languageserver.formatter.ignoreMultilineInstructions": false,
   // github confis
   "git.autofetch": "all",
   "git.countBadge": "all",

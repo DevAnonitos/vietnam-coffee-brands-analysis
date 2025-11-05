@@ -2,6 +2,25 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "name": "Launch Extension",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "type": "dockerfile",
+      "request": "launch",
+      "name": "Docker: Build",
+      "dockerfile": "Dockerfile",
+      "contextPath": "${workspaceFolder}"
+    },
+    {
       "name": "Python Debugger: Current File with Arguments",
       "type": "debugpy",
       "request": "launch",
