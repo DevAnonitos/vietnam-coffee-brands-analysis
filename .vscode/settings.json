@@ -14,18 +14,25 @@
   "editor.wordWrap": "on",
   "editor.minimap.scale": 1,
   "editor.insertSpaces": true,
-  "editor.formatOnType": false,
+  "editor.tabFocusMode": true,
+  "editor.formatOnType": true,
   "editor.linkedEditing": true,
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
+  "editor.tabCompletion": "on",
   "editor.stickyTabStops": true,
   "editor.colorDecorators": true,
   "editor.suggest.preview": true,
+  "editor.columnSelection": false,
   "editor.smoothScrolling": true,
+  "editor.aiStats.enabled": true,
+  "editor.language.brackets": null,
+  "editor.matchBrackets": "always",
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
   "editor.selectionHighlight": true,
   "editor.guides.indentation": true,
+  "editor.find.history": "workspace",
   "editor.suggest.showSnippets": true,
   "editor.inlineSuggest.enabled": true,
   "editor.scrollBeyondLastLine": false,
@@ -34,12 +41,22 @@
   "editor.accessibilitySupport": "auto",
   "editor.acceptSuggestionOnEnter": "on",
   "editor.guides.bracketPairs": "active",
+  "editor.autoClosingOvertype": "always",
+  "editor.defaultColorDecorators": "auto",
   "editor.renderControlCharacters": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.inlineSuggest.showToolbar": "onHover",
   "editor.suggest.shareSuggestSelections": true,
   "editor.bracketPairColorization.enabled": true,
+  "editor.autoClosingComments": "languageDefined",
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "editor.colorDecoratorsActivatedOn": "clickAndHover",
   "editor.defaultFormatter": "ms-python.black-formatter",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.inlineSuggest.edits.allowCodeShifting": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace",
   "editor.unicodeHighlight.allowedCharacters": {
     "·": true,
@@ -68,6 +85,42 @@
   "ruff.enable": true,
   "ruff.lineLength": 88,
   "ruff.lint.select": ["C", "E", "F", "W"],
+  // json configs
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.format.enable": true,
+  "json.validate.enable": true,
+  "json.schemaDownload.enable": true,
+  // yaml configs
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.quickSuggestions": {
+      "strings": true,
+      "other": true,
+      "comments": false
+    },
+    "editor.wordBasedSuggestions": "off"
+  },
+  "yaml.hover": true,
+  "yaml.completion": true,
+  "yaml.format.enable": true,
+  "yaml.schemaStore.enable": true,
+  "yaml.style.flowMapping": "allow",
+  "yaml.style.flowSequence": "allow",
+  "yaml.format.bracketSpacing": true,
+  "yaml.extension.recommendations": true,
+  "yaml.suggest.parentSkeletonSelectedFirst": true,
   // python configs
   "[python]": {
     "editor.tabSize": 2,
@@ -75,15 +128,28 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "python.analysis.aiCodeActions": {
+    "implementAbstractClasses": true,
+    "generateSymbol": true,
+    "convertFormatString": true
+  },
   "python.poetryPath": "poetry",
+  "python.analysis.indexing": true,
   "python.experiments.enabled": true,
   "python.testing.pytestEnabled": true,
+  "python.analysis.autoSearchPaths": true,
   "python.testing.unittestEnabled": false,
-  "python.terminal.activateEnvironment": true,
   "python.activeStateToolPath": "state",
   "python.testing.pytestArgs": ["tests"],
   "python.experiments.optOutFrom": ["All"],
+  "python.analysis.enableColorPicker": true,
+  "python.analysis.importFormat": "absolute",
   "python.envFile": "${workspaceFolder}/.env",
+  "python.analysis.enablePerfTelemetry": true,
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.typeCheckingMode": "standard",
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   // jupiter & notebook configs
   "jupyter.widgetScriptSources": [],
@@ -108,13 +174,30 @@
     "application/json",
     "application/vnd.plotly.v1+json"
   ],
+  "notebook.editorOptionsCustomizations": {
+    "jupyter-notebook": {
+      "scrollbar.vertical": "visible",
+      "scrollbar.horizontal": "visible"
+    }
+  },
   "notebook.lineNumbers": "on",
+  "notebook.compactView": true,
+  "notebook.globalToolbar": true,
+  "notebook.variablesView": true,
   "notebook.output.scrolling": true,
+  "notebook.multiCursor.enabled": true,
   "notebook.formatOnSave.enabled": true,
   "notebook.stickyScroll.enabled": true,
   "notebook.consolidatedRunButton": true,
+  "notebook.experimental.generate": true,
+  "notebook.formatOnCellExecution": true,
+  "notebook.cellFocusIndicator": "gutter",
+  "notebook.stickyScroll.mode": "indented",
+  "notebook.insertToolbarLocation": "both",
   "notebook.cellToolbarVisibility": "hover",
   "notebook.consolidatedOutputButton": true,
+  "notebook.breadcrumbs.showCodeCells": true,
+  "notebook.navigation.allowNavigateToSurroundingCells": true,
   "notebook.output.fontFamily": "JetBrains Mono, Consolas, monospace",
   // csv configs
   "csv-edit.pasteMode": "normal",
@@ -191,6 +274,9 @@
     "*.ipynb": "jupyter-notebook",
     "*.md": "vscode.markdown.preview.editor",
   },
+  "workbench.colorCustomizations": {
+
+  },
   "workbench.tree.indent": 12,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
@@ -198,17 +284,25 @@
   "workbench.layoutControl.enabled": true,
   "workbench.editor.enablePreview": false,
   "workbench.panel.defaultLocation": "bottom",
+  "workbench.activityBar.location": "default",
   "workbench.colorTheme": "Default Dark Modern",
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  // breadcrumbs configs
+  "breadcrumbs.icons": true,
   "breadcrumbs.enabled": true,
+  // window configs
   "window.commandCenter": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "window.closeWhenEmpty": true,
+  "window.autoDetectColorScheme": true,
+  "window.density.editorTabHeight": "default",
   // search configs
   "search.mode": "view",
+  "search.smartCase": true,
+  "search.sortOrder": "default",
   "search.showLineNumbers": true,
   "search.actionsPosition": "auto",
   "search.defaultViewMode": "tree",
+  "search.decorations.badges": true,
   "search.decorations.colors": true,
   "search.quickOpen.includeSymbols": false,
   "search.collapseResults": "alwaysCollapse",
@@ -220,6 +314,14 @@
   "outline.showFunctions": true,
   "problems.showCurrentInStatus": true,
   "outline.collapseItems": "alwaysExpand",
+  // color highlight configs
+  "color-highlight.languages": [
+    "*"
+  ],
+  "color-highlight.enable": true,
+  "color-highlight.useARGB": true,
+  "color-highlight.markRuler": true,
+  "color-highlight.matchWords": true,
   // docker configs
   "[dockerfile]": {
     "editor.quickSuggestions": {
@@ -248,15 +350,79 @@
   "git.postCommitCommand": "sync",
   "git.diagnosticsCommitHook.enabled": false,
   "git.autoRepositoryDetection": "openEditors",
-  // chat & AI configs
+  // inline chat configs
+  "inlineChat.notebookAgent": true,
+  "inlineChat.accessibleDiffView": "auto",
+  "inlineChat.lineNaturalLanguageHint": true,
+  // chat configs
+  "chat.mcp.access": "all",
   "chat.agent.enabled": true,
   "chat.editRequests": "inline",
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "windsurf": true,
+    "cursor-global": true,
+    "cursor-workspace": true
+  },
+  "chat.promptFilesRecommendations": {
+    "plan": true,
+    "a11y-audit": "resourceExtname == .html",
+    "document": "resourceLangId == markdown"
+  },
+  "chat.mcp.gallery.enabled": true,
+  "chat.agent.todoList": {
+    "position": "default"
+  },
+  "chat.tools.edits.autoApprove": {
+    "**/*": true,
+    "**/.vscode/*.json": false,
+    "**/.git/**": false,
+    "**/{package.json,package-lock.json,server.xml,build.rs,web.config,.gitattributes,.env}": false,
+    "**/*.{csproj,fsproj,vbproj}": false
+  },
+  "[chatmode]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "chat.math.enabled": true,
+  "chat.editor.fontSize": 13,
+  "chat.edits2.enabled": true,
+  "chat.useAgentsMdFile": true,
+  "chat.editor.wordWrap": "on",
+  "chat.useNestedAgentsMdFiles": false,
+  "chat.editor.fontFamily": "default",
+  "chat.editor.fontWeight": "default",
   "chat.commandCenter.enabled": true,
+  "chat.extensionTools.enabled": true,
   "chat.agent.thinkingStyle": "collapsed",
+  "chat.agentSessionsViewLocation": "disabled",
+  "chat.implicitContext.suggestedContext": true,
+  // github copilot configs
   "github.copilot.chat.agent.autoFix": true,
   "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.setupTests.enabled": true,
+  "github.copilot.editor.enableCodeActions": true,
   "github.copilot.chat.imageUpload.enabled": true,
+  "github.copilot.chat.reviewAgent.enabled": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
+  "github.copilot.chat.executePrompt.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.terminalChatLocation": "chatView",
   "github.copilot.chat.copilotDebugCommand.enabled": true,
+  "github.copilot.chat.editor.temporalContext.enabled": false,
+  "github.copilot.renameSuggestions.triggerAutomatically": true,
   "github.copilot.chat.edits.suggestRelatedFilesForTests": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.notebook.followCellExecution.enabled": true,
+  "github.copilot.chat.summarizeAgentConversationHistory.enabled": true,
+  "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
+  "makefile.configureOnOpen": false,
 }
