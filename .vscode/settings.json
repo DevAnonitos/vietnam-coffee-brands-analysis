@@ -32,8 +32,11 @@
   "editor.detectIndentation": false,
   "editor.selectionHighlight": true,
   "editor.guides.indentation": true,
+  "editor.suggestSelection": "first",
   "editor.find.history": "workspace",
+  "editor.suggest.showMethods": true,
   "editor.suggest.showSnippets": true,
+  "editor.suggest.showFunctions": true,
   "editor.inlineSuggest.enabled": true,
   "editor.scrollBeyondLastLine": false,
   "editor.largeFileOptimizations": true,
@@ -45,6 +48,7 @@
   "editor.defaultColorDecorators": "auto",
   "editor.renderControlCharacters": false,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.occurrencesHighlight": "singleFile",
   "editor.inlineSuggest.showToolbar": "onHover",
   "editor.suggest.shareSuggestSelections": true,
   "editor.bracketPairColorization.enabled": true,
@@ -75,6 +79,14 @@
     "**/.pytest_cache": true,
     "**/.ipynb_checkpoints": true
   },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true
+  },
+  "files.watcherInclude": [
+
+  ],
   "files.enableTrash": true,
   "files.insertFinalNewline": true,
   "files.refactoring.autoSave": true,
@@ -95,6 +107,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "json.trace.server": "off",
   "json.format.enable": true,
   "json.validate.enable": true,
   "json.schemaDownload.enable": true,
@@ -113,7 +126,9 @@
     "editor.wordBasedSuggestions": "off"
   },
   "yaml.hover": true,
+  "yaml.validate": true,
   "yaml.completion": true,
+  "yaml.trace.server": "off",
   "yaml.format.enable": true,
   "yaml.schemaStore.enable": true,
   "yaml.style.flowMapping": "allow",
@@ -133,15 +148,23 @@
     "generateSymbol": true,
     "convertFormatString": true
   },
+  "python.autoComplete.extraPaths": [
+
+  ],
+  "python.terminal.launchArgs": [
+
+  ],
   "python.poetryPath": "poetry",
   "python.analysis.indexing": true,
   "python.experiments.enabled": true,
   "python.testing.pytestEnabled": true,
+  "python.testing.pytestPath": "pytest",
   "python.analysis.autoSearchPaths": true,
   "python.testing.unittestEnabled": false,
   "python.activeStateToolPath": "state",
   "python.testing.pytestArgs": ["tests"],
   "python.experiments.optOutFrom": ["All"],
+  "python.testing.promptToConfigure": true,
   "python.analysis.enableColorPicker": true,
   "python.analysis.importFormat": "absolute",
   "python.envFile": "${workspaceFolder}/.env",
@@ -150,18 +173,27 @@
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
   "python.analysis.typeCheckingMode": "standard",
+  "python.terminal.shellIntegration.enabled": true,
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
   // jupiter & notebook configs
-  "jupyter.widgetScriptSources": [],
+  "jupyter.widgetScriptSources": [
+
+  ],
   "jupyter.logging.level": "debug",
   "jupyter.askForKernelRestart": false,
   "jupyter.themeMatplotlibPlots": true,
   "jupyter.exportWithOutputEnabled": true,
+  "jupyter.showVariableViewWhenDebugging": true,
   "jupyter.interactiveWindow.notebookRepl": false,
   "jupyter.interactiveWindow.viewColumn": "active",
+  "jupyter.interactiveWindow.codeLens.enable": true,
   "jupyter.interactiveWindow.creationMode": "multiple",
   "jupyter.interactiveWindow.cellMarker.default": "# %%",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "jupyter.interactiveWindow.cellMarker.decorateCells": "currentCell",
+  "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
   "jupyter.variableExplorerExclude": "module;function;builtin_function_or_method;ABCMeta;type;ModelMetaclass",
+  "jupyter.interactiveWindow.cellMarker.codeRegex": "^(#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "right"
@@ -245,8 +277,31 @@
     "cSpell.advanced.feature.useReferenceProviderWithRename": true,
     "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/"
   },
+  "markdown.math.macros": {
+
+  },
+  "markdown.styles": [
+
+  ],
+  "[markdown-math]": {
+
+  },
+  "markdown.math.enabled": true,
+  "markdown.trace.server": "off",
+  "markdown.validate.enabled": true,
+  "markdown.suggest.paths.enabled": true,
+  "markdown.editor.drop.enabled": "smart",
+  "markdown.editor.filePaste.enabled": "smart",
+  "markdown.links.openLocation": "currentGroup",
+  "markdown.occurrencesHighlight.enabled": true,
   "markdown.preview.scrollEditorWithPreview": true,
   "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.validate.fileLinks.enabled": "warning",
+  "markdown.preferredMdPathExtensionStyle": "auto",
+  "markdown.editor.updateLinksOnPaste.enabled": true,
+  "markdown.validate.referenceLinks.enabled": "warning",
+  "markdown.copyFiles.overwriteBehavior": "nameIncrementally",
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smartWithSelection",
   // debug configs
   "debug.inlineValues": "auto",
   "debug.console.wordWrap": true,
@@ -269,7 +324,12 @@
   "explorer.autoReveal": true,
   "search.followSymlinks": false,
   "explorer.compactFolders": false,
+  "explorer.decorations.colors": true,
+  "explorer.decorations.badges": true,
+  "explorer.fileNesting.enabled": true,
   "explorer.confirmDragAndDrop": false,
+  "explorer.incrementalNaming": "simple",
+  "explorer.openEditors.sortOrder": "editorOrder",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.md": "vscode.markdown.preview.editor",
@@ -290,14 +350,28 @@
   // breadcrumbs configs
   "breadcrumbs.icons": true,
   "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "on",
+  // zenMode configs
+  "zenMode.centerLayout": true,
+  "zenMode.showTabs": "multiple",
+  "zenMode.silentNotifications": true,
   // window configs
   "window.commandCenter": true,
   "window.closeWhenEmpty": true,
   "window.autoDetectColorScheme": true,
   "window.density.editorTabHeight": "default",
+  "interactiveWindow.showExecutionHint": true,
+  "interactiveWindow.alwaysScrollOnNewCell": true,
+  "interactiveWindow.collapseCellInputCode": "fromEditor",
+  // task configs
+  "task.autoDetect": "on",
+  "task.saveBeforeRun": "always",
+  "task.allowAutomaticTasks": "on",
+  "task.problemMatchers.neverPrompt": false,
   // search configs
   "search.mode": "view",
   "search.smartCase": true,
+  "search.seedOnFocus": false,
   "search.sortOrder": "default",
   "search.showLineNumbers": true,
   "search.actionsPosition": "auto",
@@ -305,6 +379,7 @@
   "search.decorations.badges": true,
   "search.decorations.colors": true,
   "search.quickOpen.includeSymbols": false,
+  "search.quickAccess.preserveInput": false,
   "search.collapseResults": "alwaysCollapse",
   "search.searchEditor.focusResultsOnSearch": true,
   "search.searchEditor.doubleClickBehaviour": "goToLocation",
@@ -312,6 +387,8 @@
   "outline.showClasses": true,
   "outline.showVariables": true,
   "outline.showFunctions": true,
+  "outline.problems.badges": true,
+  "outline.problems.colors": true,
   "problems.showCurrentInStatus": true,
   "outline.collapseItems": "alwaysExpand",
   // color highlight configs
@@ -340,16 +417,22 @@
   },
   "docker.lsp.telemetry": "all",
   "docker.lsp.debugServerPort": null,
+  "docker.languageserver.diagnostics.instructionCasing": "warning",
   "docker.languageserver.diagnostics.deprecatedMaintainer": "warning",
   "docker.extension.editor.dockerfileBuildStageDecorationLines": true,
   "docker.languageserver.formatter.ignoreMultilineInstructions": false,
-  // github confis
+  "docker.languageserver.diagnostics.instructionJSONInSingleQuotes": "warning",
+  // git & github confis
   "git.autofetch": "all",
   "git.countBadge": "all",
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
+  "git.branchSortOrder": "committerdate",
   "git.diagnosticsCommitHook.enabled": false,
   "git.autoRepositoryDetection": "openEditors",
+  "github.showAvatar": true,
+  "github.gitAuthentication": true,
+  "github.gitProtocol": "https",
   // inline chat configs
   "inlineChat.notebookAgent": true,
   "inlineChat.accessibleDiffView": "auto",

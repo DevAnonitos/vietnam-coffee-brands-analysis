@@ -5,13 +5,15 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/username/vietnam-coffee-brands-analysis/graphs/commit-activity)
 
-## 📋 Overview
+## Overview
 A comprehensive data science analysis of Vietnamese coffee brands, exploring market dynamics and consumer preferences through advanced analytics and visualization.
 
-## 🏗️ Project Structure
+## Table of Contents
+
+## Project Structure
 ```
-├── data/               # Data files (raw, processed)
-├── notebooks/          # Jupyter notebooks for analysis
+├── data/              # Data files (raw, processed)
+├── notebooks/         # Jupyter notebooks for analysis
 ├── src/               # Source code and modules
 │   ├── data/          # Data processing scripts
 │   ├── features/      # Feature engineering code
@@ -20,13 +22,13 @@ A comprehensive data science analysis of Vietnamese coffee brands, exploring mar
 ├── tests/             # Unit tests
 ├── results/           # Analysis outputs and reports
 ├── requirements.txt   # Project dependencies
-└── README.md         # Project documentation
+└── README.md          # Project documentation
 ```
 
-## 🚀 Quick Start
+## Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/username/vietnam-coffee-brands-analysis.git
+git clone https://github.com/DevAnonitos/vietnam-coffee-brands-analysis.git
 
 # Create virtual environment
 python -m venv venv
@@ -37,12 +39,12 @@ venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 ```
 
-## 📊 Data Sources
+## Data Sources
 - [Primary data source]
 - [Secondary data source]
 - Last updated: [Date]
 
-## 🔄 Analysis Pipeline
+## Analysis Pipeline
 1. 🔍 Data Collection
 2. 🧹 Data Preprocessing
 3. 📈 Exploratory Data Analysis
@@ -50,31 +52,31 @@ pip install -r requirements.txt
 5. 🎨 Visualization
 6. 📑 Results Documentation
 
-## 🛠️ Technologies
-- Python 3.8+
+## Technologies
+- Python 3.10+
 - Pandas & NumPy for data manipulation
 - Matplotlib & Seaborn for visualization
 - Scikit-learn for analysis
 - Jupyter for interactive development
 
-## 📈 Key Findings
+## Key Findings
 - Finding 1
 - Finding 2
 - Finding 3
 
-## 🤝 Contributing
+## Contributing
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit changes (`git commit -m 'Add AmazingFeature'`)
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## 📄 License
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📫 Contact
-- Author: [Your Name]
+## Contact
+- Author: [Nguyen Duc Gia Bao]
 - Email: [your.email@domain.com]
 - LinkedIn: [Your LinkedIn]
-- Project Link: [https://github.com/username/vietnam-coffee-brands-analysis](https://github.com/username/vietnam-coffee-brands-analysis)
+- Project Link: [https://github.com/DevAnonitos/vietnam-coffee-brands-analysis.git](https://github.com/DevAnonitos/vietnam-coffee-brands-analysis.git)
 
