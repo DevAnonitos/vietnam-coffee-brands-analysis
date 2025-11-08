@@ -47,6 +47,7 @@
       "janisdd.vscode-edit-csv"
       "charliermarsh.ruff"
       "ms-python.black-formatter"
+      "ms-vscode.live-server"
     ];
 
     # Enable previews
