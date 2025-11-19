@@ -25,14 +25,15 @@
   "editor.stickyTabStops": true,
   "editor.colorDecorators": true,
   "editor.suggest.preview": true,
-  "editor.columnSelection": false,
   "editor.smoothScrolling": true,
   "editor.aiStats.enabled": true,
+  "editor.columnSelection": false,
   "editor.language.brackets": null,
   "editor.autoIndent": "advanced",
   "editor.matchBrackets": "always",
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": false,
+  "editor.autoIndentOnPaste": false,
   "editor.selectionHighlight": true,
   "editor.guides.indentation": true,
   "editor.suggest.showColors": true,
@@ -40,6 +41,7 @@
   "editor.find.history": "workspace",
   "editor.suggest.showMethods": true,
   "editor.suggest.showSnippets": true,
+  "editor.comments.insertSpace": true,
   "editor.suggest.showFunctions": true,
   "editor.inlineSuggest.enabled": true,
   "editor.scrollBeyondLastLine": false,
@@ -55,6 +57,7 @@
   "editor.defaultColorDecorators": "auto",
   "editor.suggest.showCustomcolors": true,
   "editor.renderControlCharacters": false,
+  "editor.autoSurround": "languageDefined",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.experimentalGpuAcceleration": "off",
   "editor.occurrencesHighlight": "singleFile",
@@ -64,12 +67,14 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.autoClosingComments": "languageDefined",
   "editor.autoClosingBrackets": "languageDefined",
+  "editor.guides.highlightActiveBracketPair": true,
   "editor.inlineSuggest.edits.showCollapsed": true,
   "editor.inlineSuggest.suppressSuggestions": false,
   "editor.inlineSuggest.suppressInSnippetMode": true,
+  "editor.stickyScroll.defaultModel": "outlineModel",
   "editor.colorDecoratorsActivatedOn": "clickAndHover",
   "editor.inlineSuggest.edits.renderSideBySide": "auto",
-  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.defaultFormatter": "charliermarsh.ruff",
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.inlineSuggest.edits.allowCodeShifting": "always",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
@@ -108,6 +113,9 @@
   "isort.args": ["--profile", "black"],
   "ruff.enable": true,
   "ruff.lineLength": 88,
+  "ruff.lint.enable": true,
+  "ruff.lint.preview": null,
+  "ruff.organizeImports": true,
   "ruff.lint.select": ["C", "E", "F", "W"],
   // json configs
   "[json]": {
@@ -158,7 +166,7 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "python.analysis.aiCodeActions": {
     "implementAbstractClasses": true,
@@ -196,6 +204,8 @@
   "python.analysis.typeCheckingMode": "standard",
   "python.terminal.shellIntegration.enabled": true,
   "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  // colab configs
+  "colab.logging.level": "debug",
   // jupiter & notebook configs
   "jupyter.widgetScriptSources": [
 
@@ -215,6 +225,7 @@
   "jupyter.showOutlineButtonInNotebookToolbar": true,
   "jupyter.interactiveWindow.creationMode": "multiple",
   "jupyter.interactiveWindow.cellMarker.default": "# %%",
+  "jupyter.interactiveWindow.splitRunFileIntoCells": true,
   "jupyter.interactiveWindow.textEditor.cellFolding": true,
   "jupyter.interactiveWindow.codeLens.enableGotoCell": true,
   "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks",
@@ -235,6 +246,7 @@
     "application/json",
     "application/vnd.plotly.v1+json"
   ],
+  "notebook.defaultFormatter": "charliermarsh.ruff",
   "notebook.editorOptionsCustomizations": {
     "jupyter-notebook": {
       "scrollbar.vertical": "visible",
@@ -372,11 +384,17 @@
 
   },
   "workbench.tree.indent": 12,
+  "workbench.editor.showIcons": true,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": true,
   "workbench.editor.enablePreview": false,
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
   "workbench.panel.defaultLocation": "bottom",
   "workbench.activityBar.location": "default",
   "workbench.colorTheme": "Default Dark Modern",
@@ -457,6 +475,9 @@
       "comments": false,
       "strings": true
     }
+  },
+  "[dockerbake]": {
+
   },
   "docker.lsp.telemetry": "all",
   "docker.lsp.debugServerPort": null,
@@ -565,6 +586,9 @@
   "gitlab.duoAgentPlatform.defaultNamespace": "",
   "gitlab.duoAgentPlatform.connectionType": "websocket",
   // github copilot configs
+  "github.copilot.advanced": {
+
+  },
   "github.copilot.chat.agent.autoFix": true,
   "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.chat.codesearch.enabled": true,
@@ -576,6 +600,7 @@
   "github.copilot.chat.executePrompt.enabled": true,
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.chat.terminalChatLocation": "chatView",
+  "github.copilot.chat.anthropic.thinking.enabled": true,
   "github.copilot.chat.copilotDebugCommand.enabled": true,
   "github.copilot.chat.editor.temporalContext.enabled": false,
   "github.copilot.renameSuggestions.triggerAutomatically": true,

@@ -10,7 +10,13 @@
   "customizations": {
     "vscode": {
       "settings": {
-
+        "python.analysis.aiCodeActions": {
+          "implementAbstractClasses": true,
+          "generateSymbol": true,
+          "convertFormatString": true
+        },
+        "python.analysis.aiHoverSummaries": true,
+        "python.analysis.autoImportCompletions": true
       },
       "extensions": [
 

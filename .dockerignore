@@ -1,3 +1,4 @@
+# cache
 tmp/
 temp/
 logs/
@@ -26,6 +27,7 @@ keys/
 secrets/
 credentials/
 
+# ENV
 *.env
 env/
 ENV/
@@ -37,6 +39,7 @@ Pipfile.lock
 token.json
 service_account.json
 
+# python cache
 *.pyc
 *.pyo
 *.pyd
@@ -49,12 +52,14 @@ service_account.json
 *.egg-info/
 __pycache__/
 
+# git
 .git/
 .gitignore
 .gitmodules
 .gitattributes
 .gitlab-ci.yml
 
+# editor
 .idea/
 .vscode/
 .spyproject
@@ -64,10 +69,12 @@ __pycache__/
 *.sublime-project
 *.sublime-workspace
 
+# notebook
 /notebooks/
+notebooks/temp/
+
 *.nb.html
 *.nbconvert/
-notebooks/temp/
 *.nbconvert.ipynb
 *.ipynb_checkpoints
 .ipynb_checkpoints/
