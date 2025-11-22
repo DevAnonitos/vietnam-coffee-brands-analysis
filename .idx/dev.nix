@@ -8,14 +8,19 @@
   packages = [
     pkgs.python312
     pkgs.python312Packages.pip
+    pkgs.python312Packages.conda
+    pkgs.python312Packages.wheel
+    pkgs.python312Packages.selenium
     pkgs.python312Packages.setuptools
     pkgs.python312Packages.virtualenv
-    pkgs.python312Packages.wheel
     pkgs.git
     pkgs.curl
     pkgs.wget
     pkgs.unzip
     pkgs.jq
+    pkgs.google-chrome
+    pkgs.chromedriver
+    pkgs.sudo
   ];
 
   # Sets environment variables in the workspace
