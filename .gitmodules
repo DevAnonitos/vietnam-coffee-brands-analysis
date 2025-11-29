@@ -1,0 +1,11 @@
+[submodule "notebook"]
+  path = notebook
+  url = https://github.com/devanonitos/notebook.git
+  branch = main
+
+[submodule "tests"]
+  path = tests
+  url = https://github.com/devanonitos/tests.git
+  branch = main
+
+
