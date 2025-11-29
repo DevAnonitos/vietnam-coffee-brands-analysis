@@ -365,7 +365,6 @@
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.enablePersistentSessions": true,
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
   // explorer & workbench configs
   "explorer.autoReveal": true,
   "search.followSymlinks": false,
