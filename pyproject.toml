@@ -49,7 +49,7 @@ ensure_newline_before_comments = true
 
 [tool.ruff]
 line-length = 88
-select = ["E", "F", "W", "I001"]
+select = ["E", "F", "W", "I"]
 ignore = ["E203", "E501", "F401"]
-exclude = ["venv", "build", "dist", "__pycache__", "data"]
+exclude = ["venv", "build", "dist", "__pycache__", "data", "notebooks"]
 
