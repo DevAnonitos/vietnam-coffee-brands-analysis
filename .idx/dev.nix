@@ -53,6 +53,7 @@
       "charliermarsh.ruff"
       "ms-python.black-formatter"
       "ms-vscode.live-server"
+      "google.colab"
     ];
 
     # Enable previews
