@@ -1,0 +1,19 @@
+version: 2
+
+projectIgnorePaths:
+  - ""
+  - ""
+
+triggerPaths:
+  - ""
+  - ""
+
+issueRules:
+  telemetry: true
+  unresolvedRequire: false
+
+githubApp:
+  enabled: true
+  ignoreUsers: ["aBotOnGitHub"]
+  dependencyOverviewEnabled: true
+  disableCommentsAndCheckRuns: false
