@@ -1,12 +1,25 @@
-version: 2
+version: 2.0
 
 projectIgnorePaths:
-  - ""
-  - ""
+  - node_modules
+  - dist
+  - build
+  - .venv
+  - venv
+  - __pycache__
+  - .pytest_cache
+  - .mypy_cache
+  - .egg-info
 
 triggerPaths:
-  - ""
-  - ""
+  - src/**/*.py
+  - src/**/*.yaml
+  - src/**/*.yml
+  - configs/**/*
+  - requirements.txt
+  - environment.yml
+  - setup.py
+  - pyproject.toml
 
 issueRules:
   telemetry: true
@@ -14,6 +27,6 @@ issueRules:
 
 githubApp:
   enabled: true
-  ignoreUsers: ["aBotOnGitHub"]
+  ignoreUsers: ["aBotOnGitHub", "dependabot"]
   dependencyOverviewEnabled: true
   disableCommentsAndCheckRuns: false
