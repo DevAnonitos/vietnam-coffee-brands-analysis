@@ -22,11 +22,14 @@ triggerPaths:
   - pyproject.toml
 
 issueRules:
+  malware: true
   telemetry: true
+  gitDependency: true
+  httpDependency: true
   unresolvedRequire: false
 
 githubApp:
   enabled: true
-  ignoreUsers: ["aBotOnGitHub", "dependabot"]
   dependencyOverviewEnabled: true
   disableCommentsAndCheckRuns: false
+  ignoreUsers: ["aBotOnGitHub", "dependabot"]
