@@ -31,6 +31,8 @@ reports/
 
 # Notebooks
 .ipynb_checkpoints/
+notebooks/output/
+notebooks/tmp/
 
 # IDE & Editor configuration
 !.vscode/extensions.json
