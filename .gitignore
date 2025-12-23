@@ -20,7 +20,11 @@ dist/
 # Data, Models & Outputs
 /data/*
 *.pkl
+*.csv
 *.joblib
+*.feather
+*.parquet
+
 reports/
 *.html
 *.pdf

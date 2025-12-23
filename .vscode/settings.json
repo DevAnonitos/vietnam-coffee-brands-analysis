@@ -22,7 +22,6 @@
   "editor.formatOnPaste": true,
   "editor.fontLigatures": true,
   "editor.tabCompletion": "on",
-  "editor.stickyTabStops": true,
   "editor.colorDecorators": true,
   "editor.suggest.preview": true,
   "editor.smoothScrolling": true,

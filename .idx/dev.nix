@@ -18,6 +18,7 @@
     pkgs.wget
     pkgs.unzip
     pkgs.jq
+    pkgs.vscode
     pkgs.google-chrome
     pkgs.chromedriver
     pkgs.sudo
@@ -53,6 +54,7 @@
       "charliermarsh.ruff"
       "ms-python.black-formatter"
       "ms-vscode.live-server"
+      "google.colab"
     ];
 
     # Enable previews

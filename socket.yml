@@ -1,0 +1,35 @@
+version: 2.0
+
+projectIgnorePaths:
+  - node_modules
+  - dist
+  - build
+  - .venv
+  - venv
+  - __pycache__
+  - .pytest_cache
+  - .mypy_cache
+  - .egg-info
+
+triggerPaths:
+  - src/**/*.py
+  - src/**/*.yaml
+  - src/**/*.yml
+  - configs/**/*
+  - requirements.txt
+  - environment.yml
+  - setup.py
+  - pyproject.toml
+
+issueRules:
+  malware: true
+  telemetry: true
+  gitDependency: true
+  httpDependency: true
+  unresolvedRequire: false
+
+githubApp:
+  enabled: true
+  dependencyOverviewEnabled: true
+  disableCommentsAndCheckRuns: false
+  ignoreUsers: ["aBotOnGitHub", "dependabot"]

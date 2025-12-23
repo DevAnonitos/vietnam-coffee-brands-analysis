@@ -2,17 +2,39 @@
 * text=auto
 
 # Python files
-*.py text diff=python
+*.py     text diff=python
 
 # Jupyter Notebook files
-*.ipynb text
+*.ipynb  diff=jupyter
+
+# File project
+*.yaml   text eol=lf
+*.md     text eol=lf
+*.sh     text eol=lf
+*.py     text eol=lf
+*.sql    text eol=lf
+*.toml   text eol=lf
+
+# Assets file
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.svg    text
 
 # Data files
-*.csv text
-*.tsv text
-*.json text
-*.xlsx binary
-*.xls binary
+*.csv   text
+*.tsv   text
+*.json  text
+*.xlsx  binary
+*.xls   binary
+
+# Documents
+*.pdf   binary
+*.docx  binary
+*.pptx  binary
+*.xlsx  binary
 
 # Ignore specific file types
 *.log text
