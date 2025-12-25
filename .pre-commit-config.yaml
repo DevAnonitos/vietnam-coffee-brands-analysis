@@ -21,3 +21,8 @@ repos:
     rev: v6.0.0
     hooks:
       -   id: trailing-whitespace
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.2
+    hooks:
+      - id: nbstripout
