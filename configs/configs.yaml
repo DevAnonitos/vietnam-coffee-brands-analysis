@@ -1,0 +1,21 @@
+# default config
+defaults:
+  - data: default
+  - model: default
+  - training: default
+  - evaluation: default
+  - paths: default
+  - logging: default
+  - _self_
+
+# metadata project config
+project:
+  name: "Vietnam Coffee Branding"
+  version: "0.1.0"
+  description: "Production-grade DS project"
+  author: "Bao Nguyen Duc Gia"
+  seed: 42
+
+# env config
+env: local
+debug: false

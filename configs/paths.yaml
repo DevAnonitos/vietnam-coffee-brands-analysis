@@ -1,18 +1,21 @@
-project:
-  name: vietnam-coffee-brands-analysis
-  root: .
-  version: 0.1.0
+# root config
+root: ${hydra:runtime.cwd}
 
 data:
-  raw: data/raw
-  interim: data/interim
-  external: data/external
-  features: data/features
-  processed: data/processed
+  root: ${paths.root}/data
+
+src:
+  root: ${paths.root}/src
+
+
+models:
+  root: ${paths.root}/model
 
 reports:
-  figures: reports/figures
+  root: ${paths.root}/reports
+  figures: ${paths.root}/reports/figures
+  metrics: ${paths.root}/reports/metrics
+  html: ${paths.root}/reports/html
 
-experiments:
-
-
+scripts:
+  root: ${paths.root}/scripts
