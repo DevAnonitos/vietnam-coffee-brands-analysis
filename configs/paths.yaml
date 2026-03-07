@@ -7,6 +7,10 @@ data:
 src:
   root: ${paths.root}/src
 
+logs:
+  root: ${paths.root}/logs
+  training: ${paths.root}/logs/training
+  evaluation: ${paths.root}/logs/evaluation
 
 models:
   root: ${paths.root}/model
@@ -16,6 +20,12 @@ reports:
   figures: ${paths.root}/reports/figures
   metrics: ${paths.root}/reports/metrics
   html: ${paths.root}/reports/html
+  shap: ${paths.root}/reports/shap
+
+tests:
+  root: ${paths.root}/tests
+  unit: ${paths.root}/tests/unit
+  integration: ${paths.root}/tests/integration
 
 scripts:
   root: ${paths.root}/scripts

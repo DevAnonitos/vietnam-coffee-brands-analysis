@@ -1,11 +1,14 @@
 # default config
 defaults:
+  - db: default
   - data: default
-  - model: default
+  - paths: default
+  - tests: default
+  - models: default
+  - logging: default
+  - features: default
   - training: default
   - evaluation: default
-  - paths: default
-  - logging: default
   - _self_
 
 # metadata project config

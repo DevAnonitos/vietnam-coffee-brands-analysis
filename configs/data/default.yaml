@@ -1,0 +1,8 @@
+
+# Data Split Config
+split:
+  test_size:
+  val_size:
+  random_state:
+  stratify: true
+  shuffle: true
