@@ -1,0 +1,22 @@
+# Testing Configuration
+
+# Pytest flags
+pytest:
+  - "-v"
+  - "--cov=src"
+  - "--cov-report=html"
+  - "--cov-report=term-missing"
+
+# Mock settings
+use_mocks: true
+mock_db: true
+
+# Data for testing
+test_data:
+  sample_size: 100
+  generate_synthetic: false
+
+# CI/CD test flags
+ci:
+  fail_under: 80 # minimum coverage
+  run_integration: true

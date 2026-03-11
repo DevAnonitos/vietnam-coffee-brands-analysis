@@ -1,0 +1,29 @@
+# Training Loop Configuration
+
+# Cross-validation strategy
+cv:
+  method: "stratified-kfold"
+  n_splits: 5
+  shuffle: true
+  random_state: ${project.seed}
+
+# Optimization settings
+optimization:
+  metric: "f1_score"
+  direction: "maximize"
+  n_trials: 50
+  timeout: 3600
+
+# Training hardware
+hardware:
+  device: "cpu" # Options: "cpu", "cuda", "mps"
+  precision: 32 # 16, 32, 64
+
+# Callbacks & Monitoring
+callbacks:
+  early_stopping:
+    patience: 10
+    min_delta: 0.001
+  model_checkpoint:
+    save_best_only: true
+    monitor: "val_loss"

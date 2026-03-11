@@ -1,8 +1,21 @@
-
 # Data Split Config
 split:
-  test_size:
-  val_size:
-  random_state:
+  train: 0.8
+  test: 0.1
+  val: 0.1
+  random_state: ${project.seed}
   stratify: true
   shuffle: true
+
+# Preprocessing flags
+preprocessing:
+  handle_missing: true
+  remove_outliers: true
+  outlier_method: "z-score"
+  standardize_units: true
+
+# Loader configuration
+loader:
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true

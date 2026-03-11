@@ -1,14 +1,28 @@
+# Feature Engineering & Selection Strategy
+
+# Encoding strategies for categorical features
 encoding:
+  method: "one-hot" # Options: one-hot, label, target, catboost
+  handle_unknown: "ignore"
 
-decoding:
-
-transformation:
-
+# Scaling for numerical features
 scaling:
+  method: "standard" # Options: standard, min-max, robust, normalizer
+  features: "numerical"
 
+# Feature transformation (Skewness correction)
+transformation:
+  method: "log" # Options: log, box-cox, yeo-johnson
+  features: []
 
-extraction:
-
+# Feature selection settings
 selection:
+  method: "variance" # Options: variance, correlation, mutual_info, recursive
+  threshold: 0.1
+  top_k: 20
 
+# Manual engineering flags
 engineering:
+  text_analysis: true
+  date_features: true
+  interaction_terms: false

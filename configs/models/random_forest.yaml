@@ -1,0 +1,11 @@
+# Random Forest Hyperparameters
+
+params:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 2
+  min_samples_leaf: 1
+  bootstrap: true
+  n_jobs: -1
+  random_state: ${project.seed}
+  class_weight: "balanced"

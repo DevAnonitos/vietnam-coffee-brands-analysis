@@ -1,0 +1,18 @@
+# Database connection settings
+# IMPORTANT: Use environment variables for sensitive information
+# These are retrieved via ${oc.env:VAR_NAME} in Hydra
+
+connection:
+  type: "postgresql" # or "mongodb", "sqlite"
+  host: ${oc.env:DB_HOST, 'localhost'}
+  port: ${oc.env:DB_PORT, 5432}
+  username: ${oc.env:DB_USER, 'postgres'}
+  password: ${oc.env:DB_PASS, 'password'}
+  database: ${oc.env:DB_NAME, 'coffee_brands'}
+
+# Session configuration
+session:
+  autocommit: false
+  autoflush: false
+  pool_size: 10
+  max_overflow: 20

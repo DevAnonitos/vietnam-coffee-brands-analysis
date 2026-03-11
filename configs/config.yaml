@@ -9,16 +9,24 @@ defaults:
   - features: default
   - training: default
   - evaluation: default
+  - api: default
   - _self_
 
 # metadata project config
 project:
-  name: "Vietnam Coffee Branding"
-  version: "0.1.0"
-  description: "Production-grade DS project"
+  name: "Vietnam Coffee Branding Analysis"
+  version: "1.0.0"
+  description: "Advanced data analysis and machine learning for Vietnam coffee brands"
   author: "Bao Nguyen Duc Gia"
   seed: 42
 
-# env config
+# environment configuration
 env: local
 debug: false
+
+# Experiment tracking flags
+tracking:
+  use_mlflow: false
+  use_wandb: false
+  experiment_name: "vietnam-coffee-brands"
+  run_name: "baseline-run"

@@ -1,0 +1,8 @@
+# Default Model Selection (Random Forest)
+defaults:
+  - random_forest
+  - _self_
+
+name: "RandomForest"
+type: "classification"
+version: "1.0.0"

@@ -1,0 +1,26 @@
+# Evaluation & Metrics Configuration
+
+# Primary evaluation metrics
+metrics:
+  classification:
+    - "f1_score"
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "roc_auc"
+  regression:
+    - "rmse"
+    - "mae"
+    - "r2"
+
+# Validation thresholds
+thresholds:
+  f1_min: 0.75
+  auc_min: 0.80
+
+# Visualization flags
+reporting:
+  plot_confusion_matrix: true
+  plot_roc_curve: true
+  plot_precision_recall: true
+  generate_shap_values: true

@@ -1,0 +1,25 @@
+# API/Web Server Configuration
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  timeout: 60
+  debug: ${debug}
+
+fastapi:
+  root_path: ""
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+  openapi_url: "/openapi.json"
+
+cors:
+  allow_origins: ["*"]
+  allow_methods: ["*"]
+  allow_headers: ["*"]
+
+endpoints:
+  v1:
+    predict: "/v1/predict"
+    batch_predict: "/v1/batch-predict"
+    health: "/health"

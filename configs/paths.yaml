@@ -3,29 +3,35 @@ root: ${hydra:runtime.cwd}
 
 data:
   root: ${paths.root}/data
+  raw: ${paths.data.root}/raw
+  interim: ${paths.data.root}/interim
+  processed: ${paths.data.root}/processed
+  external: ${paths.data.root}/external
 
 src:
   root: ${paths.root}/src
 
 logs:
   root: ${paths.root}/logs
-  training: ${paths.root}/logs/training
-  evaluation: ${paths.root}/logs/evaluation
+  training: ${paths.logs.root}/training
+  evaluation: ${paths.logs.root}/evaluation
 
 models:
   root: ${paths.root}/model
+  checkpoints: ${paths.models.root}/checkpoints
+  registry: ${paths.models.root}/registry
 
 reports:
   root: ${paths.root}/reports
-  figures: ${paths.root}/reports/figures
-  metrics: ${paths.root}/reports/metrics
-  html: ${paths.root}/reports/html
-  shap: ${paths.root}/reports/shap
+  figures: ${paths.reports.root}/figures
+  metrics: ${paths.reports.root}/metrics
+  html: ${paths.reports.root}/html
+  shap: ${paths.reports.root}/shap
 
 tests:
   root: ${paths.root}/tests
-  unit: ${paths.root}/tests/unit
-  integration: ${paths.root}/tests/integration
+  unit: ${paths.tests.root}/unit
+  integration: ${paths.tests.root}/integration
 
 scripts:
   root: ${paths.root}/scripts
